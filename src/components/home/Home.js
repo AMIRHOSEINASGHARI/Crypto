@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Coins from '../coin/Coins';
+import Loader from '../loader/Loader';
 
 //api
 import getCoins from '../../services/api';
@@ -17,7 +18,9 @@ const Home = () => {
     return (
         <div>
             {
-                coins.map(coin => <Coins key={coin.id} coinData={coin} />)
+                coins.length ?
+                coins.map(coin => <Coins key={coin.id} coinData={coin} />) :
+                <Loader />
             }
         </div>
     );
