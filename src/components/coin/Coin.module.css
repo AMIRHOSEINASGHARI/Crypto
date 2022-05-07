@@ -1,0 +1,63 @@
+.coinContainer {
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.coinContainer a {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(73, 73, 73);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.coinContainer a:hover {
+    background-color: #000;
+    transition: all 0.2s ease;
+}
+
+.coinImageSection {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.coinImageSection img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.lastUpdate .red {
+    color: #f03f5d;
+    background-color: #FFE4E9;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
+.lastUpdate .green {
+    color: #23d246;
+    background-color: #C1F7CC;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
+.currentPrice,
+.lastUpdate,
+.totalVolume {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -15px 0;
+}
+
+.currentPrice {
+    margin-top: 20px;
+}
